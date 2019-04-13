@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "events",
+    "version": "4",
+    "fulfillmentActivity": {
+      "type": "ReturnIntent"
+    },
+    "sampleUtterances": [
+      "event date",
+      "when is my event",
+      "i want details of an event",
+      "event detail",
+      "events",
+      "when is {eventName}",
+      "{eventName} details"
+    ],
+    "slots": [
+      {
+        "sampleUtterances": [],
+        "slotType": "events_dotty",
+        "slotTypeVersion": "2",
+        "slotConstraint": "Required",
+        "valueElicitationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "What is the name of the event?"
+            }
+          ],
+          "maxAttempts": 2
+        },
+        "priority": 1,
+        "name": "eventName"
+      }
+    ],
+    "conclusionStatement": {
+      "messages": [
+        {
+          "groupNumber": 1,
+          "contentType": "PlainText",
+          "content": "I will check and say"
+        }
+      ]
+    },
+    "slotTypes": [
+      {
+        "description": "Names of events in TICKIT database",
+        "name": "events_dotty",
+        "version": "2",
+        "enumerationValues": [
+          {
+            "value": "mid semester",
+            "synonyms": [
+              "mid sem"
+            ]
+          },
+          {
+            "value": "abstrosonic",
+            "synonyms": [
+              "abstronic"
+            ]
+          },
+          {
+            "value": "sample",
+            "synonyms": [
+              "sammple"
+            ]
+          },
+          {
+            "value": "karwaan",
+            "synonyms": [
+              "karvan"
+            ]
+          }
+        ],
+        "valueSelectionStrategy": "TOP_RESOLUTION"
+      }
+    ]
+  }
+}

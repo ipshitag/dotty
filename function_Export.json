@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "function",
+    "version": "2",
+    "fulfillmentActivity": {
+      "type": "ReturnIntent"
+    },
+    "sampleUtterances": [
+      "What can you do",
+      "help",
+      "function",
+      "what are your feature",
+      "kya kar skte ho tum"
+    ],
+    "slots": [],
+    "conclusionStatement": {
+      "messages": [
+        {
+          "groupNumber": 1,
+          "contentType": "PlainText",
+          "content": "I can give you event details, holiday details and teacher details. What would you like to do?"
+        }
+      ]
+    },
+    "slotTypes": []
+  }
+}

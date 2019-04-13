@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "whatsyourname",
+    "version": "3",
+    "fulfillmentActivity": {
+      "type": "ReturnIntent"
+    },
+    "sampleUtterances": [
+      "what is your name",
+      "what are you called"
+    ],
+    "slots": [],
+    "conclusionStatement": {
+      "messages": [
+        {
+          "groupNumber": 1,
+          "contentType": "PlainText",
+          "content": "The name is Bot, Dotty Bot"
+        },
+        {
+          "groupNumber": 1,
+          "contentType": "PlainText",
+          "content": "My name is Dotty"
+        },
+        {
+          "groupNumber": 1,
+          "contentType": "PlainText",
+          "content": "The name is Dotty"
+        },
+        {
+          "groupNumber": 1,
+          "contentType": "PlainText",
+          "content": "Log mujhe Dotty kehte hai"
+        },
+        {
+          "groupNumber": 1,
+          "contentType": "PlainText",
+          "content": "People call me Dotty"
+        }
+      ]
+    },
+    "slotTypes": []
+  }
+}
